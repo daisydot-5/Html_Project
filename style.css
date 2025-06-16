@@ -1,0 +1,191 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.welcome{
+    background-image: url('/images/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: large;
+    padding: 4.5rem 0rem;
+    padding-left: 3rem;
+    color: rgb(255, 255, 255);
+}
+.box1,
+.box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.aboutbox,.aboutbox3{
+    padding: 0rem 2rem;
+    width: 30rem;
+}
+.aboutbox2{
+    padding: 0rem 2rem;
+    width: 30rem;
+    margin: 0rem 1rem;
+}
+.aboutbox>h1,.aboutbox2>h1,.aboutbox3>h1{
+    font-size: 4rem;
+    margin: 0;
+}
+.aboutbox>p,.aboutbox2>p,.aboutbox3>p{
+    font-size: 1.3rem;
+    margin: 2rem 0rem;
+}
+.button{
+    background-color: rgb(2, 52, 159);
+    color: white;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.5rem;
+}
+.image1{
+    width: 36.5rem;
+    height: 22rem;
+    border-radius: 10px;
+}
+.ourproducts{
+    background-color: rgb(225, 225, 225);
+    padding: 3rem 4rem;
+}
+.ourproducts>h1{
+    font-size: 3rem;
+    margin: 0.7rem 0rem;
+}
+footer{
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+}
+footer>div>h1{
+    font-size: 3rem;
+    margin: 0rem 0rem;
+    margin-right: 16rem;
+}
+footer>a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+.gallerybox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0rem 2rem;
+}
+.gallerytitle{
+    text-align: center;
+}
+.gallerybox>img{
+    width: 35.5rem;
+    height: 17rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+.blog1{
+    align-items: center;
+    align-content: center;
+    padding: 0rem 3.5rem;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.imgcontainer>img{
+    height: auto;
+    width:73rem;
+    height: 25rem;
+    display: block;
+    margin: 0;
+    border-radius: 15px;
+}
+.blog1>h2{
+    font-size: 2.2rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+.blog1>h3{
+    font-weight: lighter;
+    margin: 0;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #b3b3b3;
+    width: 90%;
+    margin: 2rem auto;
+  }
+.more-text1{
+    display: none;
+}
+.more-text2{
+    display: none;
+}
+/* Hide extra text initially */
+.more-text1,
+.more-text2 {
+  display: none;
+}
+
+#read-toggle1:checked + p .more-text1 {
+    display: inline;
+  }
+  
+  #read-toggle2:checked + p .more-text2 {
+    display: inline;
+  }
+  
+  /* Style the "Read More" labels */
+  .read-more-label1,
+  .read-more-label2 {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Change label text depending on state */
+  .read-more-label1::after {
+    content: "Read More";
+  }
+  
+  #read-toggle1:checked + p + .read-more-label1::after {
+    content: "Read Less";
+  }
+  
+  .read-more-label2::after {
+    content: "Read More";
+  }
+  
+  #read-toggle2:checked + p + .read-more-label2::after {
+    content: "Read Less";
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #b3b3b3;
+    width: 90%;
+    margin: 2rem auto;
+  }
